@@ -1,0 +1,21 @@
+{
+  "dongvat": [
+    {
+      "id": "01",
+      "ten": "dongvat1",
+      "giotinh": true,
+      "xuatxu": "nuocngoai"
+    },
+    {
+      "id": "02",
+      "ten": "dongvat1",
+      "giotinh": true,
+      "xuatxu": "nuocngoai"
+    },
+    {
+      "id": "03",
+      "ten": "dongvat1",
+      "xuatxu": "trong núoc"
+    }
+  ]
+}

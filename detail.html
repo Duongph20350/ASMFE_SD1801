@@ -1,0 +1,19 @@
+<form method="post">
+  <label>id</label>
+  <input type="text" ng-model="id" />
+  <p></p>
+  <label>ten</label>
+  <input type="text" ng-model="ten" />
+  <p></p>
+  <label>gioitinh</label>
+  <input type="radio" value="Nam" ng-model="gioitinh" />Nam
+  <input type="radio" value="Nữ" ng-model="gioitinh" />Nữ
+  <p></p>
+  <label>xuatxu</label>
+  <select ng-model="xuatxu">
+    <option value="trong núoc">trong nước</option>
+    <option value="nước ngoài">nước Ngoài</option>
+  </select>
+  <p></p>
+  <button ng-click="add()">add</button>
+</form>

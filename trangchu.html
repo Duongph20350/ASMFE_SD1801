@@ -1,0 +1,46 @@
+<div class="container">
+  <form method="post">
+    <label>id</label>
+    <input type="text" ng-model="id" />
+    <p></p>
+    <label>ten</label>
+    <input type="text" ng-model="ten" />
+    <p></p>
+    <label>gioitinh</label>
+    <input type="radio" value="Nam" ng-model="gioitinh" />Nam
+    <input type="radio" value="Nữ" ng-model="gioitinh" />Nữ
+    <p></p>
+    <label>xuatxu</label>
+    <select ng-model="xuatxu">
+      <option value="trong núoc">trong nước</option>
+      <option value="nước ngoài">nước Ngoài</option>
+    </select>
+    <p></p>
+    <button ng-click="add()">add</button>
+    <button ng-click="update()">update</button>
+  </form>
+  <table class="table">
+    <thead>
+      <th>stt</th>
+      <th>id</th>
+      <th>ten</th>
+      <th>gioitinh</th>
+      <th>xuatxu</th>
+      <th>opt</th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="gv in listdongvat">
+        <td>{{$index+1}}</td>
+        <td>{{gv.id}}</td>
+        <td>{{gv.ten}}</td>
+        <td>{{gv.gioitinh ? "nam":"nu"}}</td>
+        <td>{{gv.xuatxu}}</td>
+        <td>
+          <button ng-click="delete(gv.id)">xoas</button>
+          <button ng-click="detail(gv.id)">detail</button>
+          <a href="#detail/{{gv.id}}">details</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
